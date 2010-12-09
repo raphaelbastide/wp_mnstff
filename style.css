@@ -1,0 +1,258 @@
+/*
+Theme Name: Manystuff
+Theme URI: http://www.raphaelbastide.com/2009/manystuff/
+Description: Theme for manystuff.org, graphic design blog. Open Source
+Version: 2.6
+Author: Raphael Bastide
+Author URI: http://www.raphaelbastide.com/
+*/
+
+
+/*......................... main */
+
+body {
+	font-family: Monaco, Verdana, Courier New, monospaced; 
+	font-size: 10px;
+        margin:0;
+        padding:0;
+        /*line-height:13px;*/
+	letter-spacing: 1px;
+}
+
+#container {
+width: 880px;
+margin:20px;
+}
+
+#header { 
+display:none;
+}
+
+#leftsidebar {
+overflow: auto;
+position:fixed !important;
+position:absolute;
+width: 200px;
+height:100%;
+left:20px;
+top:20px;
+}   
+
+#content {
+width: 650px;
+margin: 0px 0px 0px 230px;
+}
+.inside{
+display:none;
+}
+
+#footer {
+width: 970px;
+clear: both;
+}
+
+/*......................... content */
+
+#post {
+width: 100%;
+margin:0 0 30px 0;
+border-bottom:dotted 2px #CFCFCF;
+}
+
+#comments{
+padding:5px;
+background:#EFEFEF;
+}
+
+.post .date{
+font-size:9px;
+color:grey;
+}
+
+#postfooter{
+font-size:9px;
+padding:20px 0 0 0;
+}
+
+#postnav{
+padding:20px 0 20px 0 ;
+}
+
+#navleft{
+display:block;
+float:left;
+text-align:left;
+width:260px;
+height:10px;
+}
+
+#navright{
+display:block;
+float:right;
+text-align:right;
+width:260px;
+height:10px;
+}
+
+/*.........................sidebars*/
+#leftsidebar {
+font-size:10px;
+}
+
+#leftsidebar ul{
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+#leftsidebar li li, #leftsidebar li li a{
+color:black;
+padding:0px;
+margin:0px;
+}
+#s_rcomments ul li a{
+color:black;
+padding:0px;
+margin:0px;
+}
+
+#contact{ 
+margin:0 0 20px 0;
+font-size:10px;
+}
+
+#contact a{
+color:grey;
+}
+
+#date{
+font-size:9px;
+color:grey;
+}
+
+#rcomments a{
+background:#EFEFEF;
+}
+
+#text-3 h2{
+margin:3px 0 0 0;
+}
+
+#text-3{
+margin:10px 0 0 0;
+}
+
+#searchform input{
+}
+
+
+form{
+padding:0;
+margin:5px 0 20px 0;
+}
+#searchsubmit{
+width:60px;
+}
+input{
+font-family: Monaco, Verdana, Courier New, monospaced; 
+font-size:10px;
+color:grey;
+
+}
+
+/*......................... footer */
+
+#footer {
+font-style: italic;
+}
+
+.credit, .credit a{
+font-size:9px;
+color:grey;
+margin-top:10px;
+}
+
+/*......................... titles*/
+
+h1{
+font-family:Courier new, monospace;
+line-height:17px;;
+font-weight:normal;
+line-height:17px;
+text-transform:uppercase;
+font-size:17px;
+margin: 2px 0 20px 0;
+}
+
+
+#leftsidebar h2{
+color:black;
+margin:0px 0 0px 0;
+font-size:10px;
+padding:0;
+font-weight:normal;
+letter-spacing:auto;
+}
+
+h2 a:hover{
+}
+
+#post h2, #post h2 a{
+font-size:19px;
+text-transform:uppercase;
+color:black;
+font-family:Courier new, monospace;
+font-weight:normal;
+font-style:normal;
+padding:0;
+margin:0 0 7px 0;
+}
+#post h2 a:hover, #leftsidebar a:hover{
+background:#CFCFCF;
+color:black;
+text-decoration:none;
+}
+h3{
+font-size:12px;
+}
+
+h4{
+font-size:12px;
+}
+
+
+/* links & stuff */
+
+a {
+color:black;
+text-decoration: none;
+}
+
+a:hover {
+color:blue;
+text-decoration: underline;
+}
+
+#post p a{
+background:#CFCFCF;
+color:black;
+}
+
+#post p a:hover{
+background:#EFEFEF;
+text-decoration: none;
+}
+
+img, img a {
+border:none;
+}
+
+#leftsidebar img{
+margin:0 0 10px 0;
+}
+
+::selection {
+	background: #0000ff; /* Safari */
+	}
+::-moz-selection {
+	background: #0000ff; /* Firefox */
+}

@@ -3,7 +3,7 @@
 	<ul class="sidebar_list">
 			Contact
 			<h2 class="open">Categories</h2>
-			<ul id="s_categories">
+			<ul class="inside">
 				<?php wp_list_categories('show_count=1&title_li='); ?>
 			</ul>
 			<h2 class="open">RSS</h2>

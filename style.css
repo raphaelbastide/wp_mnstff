@@ -1,62 +1,44 @@
 /*
-Theme Name: Manystuff
+Theme Name: wp_mnstff
 Theme URI: http://www.raphaelbastide.com/2009/manystuff/
-Description: Theme for manystuff.org, graphic design blog. Open Source
+Description: Minimal and widget-compatible Wordpress theme used for manystuff.org 
 Version: 2.6
 Author: Raphael Bastide
 Author URI: http://www.raphaelbastide.com/
 */
 
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
 
 /*......................... main */
 
 body {
-	font-family: Monaco, Verdana, Courier New, monospaced; 
-	font-size: 10px;
-        margin:0;
-        padding:0;
-        /*line-height:13px;*/
-	letter-spacing: 1px;
+font-family: Monaco, Verdana, Courier New, monospaced; 
+font-size: 10px;
+margin:0;
+padding:0;
+/*line-height:13px;*/
+letter-spacing: 1px;
 }
 
 #container {
 width: 880px;
-margin:20px;
-}
-
-#header { 
-display:none;
-}
-
-#leftsidebar {
-overflow: auto;
-position:fixed !important;
-position:absolute;
-width: 200px;
-height:100%;
-left:20px;
-top:20px;
-}   
-
-#content {
-width: 650px;
-margin: 0px 0px 0px 230px;
-}
-.inside{
-display:none;
-}
-
-#footer {
-width: 970px;
-clear: both;
 }
 
 /*......................... content */
 
+#content {
+margin: 22px 0px 0px 230px;
+}
+
 #post {
 width: 100%;
-margin:0 0 30px 0;
-border-bottom:dotted 2px #CFCFCF;
+margin:0px 0 30px 0px;
+padding:0 0 5px 0;
+border-bottom:dotted 1px #777;
+}
+
+#post img{
+margin:0 0 10px 0;
 }
 
 #comments{
@@ -65,12 +47,11 @@ background:#EFEFEF;
 }
 
 .post .date{
-font-size:9px;
-color:grey;
+color:#ccc;
+margin:0 0 40px 0;
 }
 
 #postfooter{
-font-size:9px;
 padding:20px 0 0 0;
 }
 
@@ -95,132 +76,114 @@ height:10px;
 }
 
 /*.........................sidebars*/
+
 #leftsidebar {
-font-size:10px;
+position:fixed !important;
+position:absolute;
+overflow: auto;
+width: 200px;
+height:100%;
+left:20px;
+top:20px;
 }
 
 #leftsidebar ul{
 list-style-type:none;
 padding:0px;
-margin:0px;
+margin:0 0 5px 0;
 }
 #leftsidebar li li, #leftsidebar li li a{
 color:black;
 padding:0px;
 margin:0px;
 }
-#s_rcomments ul li a{
-color:black;
-padding:0px;
-margin:0px;
-}
-
-#contact{ 
-margin:0 0 20px 0;
-font-size:10px;
-}
-
-#contact a{
-color:grey;
-}
-
 #date{
-font-size:9px;
 color:grey;
+margin:0 0 10px 0;
 }
-
-#rcomments a{
-background:#EFEFEF;
+.inside{
+display:none;
 }
-
-#text-3 h2{
-margin:3px 0 0 0;
+.inside li:before{
+content:'-';
 }
-
-#text-3{
-margin:10px 0 0 0;
+.open{
+cursor:pointer;
 }
-
-#searchform input{
-}
-
-
 form{
 padding:0;
 margin:5px 0 20px 0;
 }
 #searchsubmit{
-width:60px;
+width:0px;
 }
 input{
 font-family: Monaco, Verdana, Courier New, monospaced; 
 font-size:10px;
-color:grey;
-
+width:100px;
 }
 
 /*......................... footer */
 
 #footer {
-font-style: italic;
-}
-
-.credit, .credit a{
-font-size:9px;
+width: 650px;
+margin: 40px 0px 70px 230px;
+clear: both;
 color:grey;
-margin-top:10px;
+}
+#footer a{
+color:grey;
+}
+#left, #middle, #right{
+width:33.3%;
+}
+#footer #left{
+float:left;
+}
+#footer #middle{
+float:left;
+text-align:center;
+}
+#footer #right{
+float:right;
+text-align:right;
 }
 
 /*......................... titles*/
 
 h1{
-font-family:Courier new, monospace;
-line-height:17px;;
 font-weight:normal;
 line-height:17px;
+font-size:16px;
 text-transform:uppercase;
-font-size:17px;
 margin: 2px 0 20px 0;
+letter-spacing:0.04em;
 }
-
 
 #leftsidebar h2{
 color:black;
-margin:0px 0 0px 0;
-font-size:10px;
+margin:0;
 padding:0;
 font-weight:normal;
 letter-spacing:auto;
 }
 
-h2 a:hover{
-}
-
 #post h2, #post h2 a{
-font-size:19px;
 text-transform:uppercase;
 color:black;
-font-family:Courier new, monospace;
 font-weight:normal;
 font-style:normal;
 padding:0;
 margin:0 0 7px 0;
+font-size:12px;
 }
 #post h2 a:hover, #leftsidebar a:hover{
 background:#CFCFCF;
 color:black;
 text-decoration:none;
 }
-h3{
-font-size:12px;
-}
 
-h4{
-font-size:12px;
-}
-
-
-/* links & stuff */
+/* more HTML */
 
 a {
 color:black;
@@ -246,13 +209,14 @@ img, img a {
 border:none;
 }
 
-#leftsidebar img{
-margin:0 0 10px 0;
-}
-
 ::selection {
-	background: #0000ff; /* Safari */
+background: #0000ff;
+color:#fff;
 	}
 ::-moz-selection {
-	background: #0000ff; /* Firefox */
+background: #0000ff;
+color:#fff;
 }
+
+
+

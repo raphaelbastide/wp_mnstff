@@ -5,7 +5,7 @@
 	<?php include (TEMPLATEPATH . '/leftsidebar.php'); ?>
 	<div id="content">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div id="post">
+		<div id="post" class="single">
 			<h2 class="sigleTitle">
 				<a href="<?php echo get_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a>
 			</h2>
@@ -20,8 +20,8 @@
 			<?php endif; ?>
 		</div>
 		<div id="postnav">
-			<div id="navleft"><?php previous_post_link('&#x25c0; %link') ?></div>
-			<div id ="navright"><?php next_post_link('%link &#x25b6;') ?></div>
+			<div id="navleft"><?php previous_post_link('&#x25c0;&nbsp;%link') ?></div>
+			<div id ="navright"><?php next_post_link('%link&nbsp;&#x25b6;') ?></div>
 		</div>
 	</div>
 </div>

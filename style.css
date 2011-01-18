@@ -38,7 +38,7 @@ border-bottom:dotted 1px #777;
 }
 
 #post img{
-margin:0 0 10px 0;
+margin-bottom:10px;
 }
 
 #comments{
@@ -152,12 +152,13 @@ text-align:right;
 /*......................... titles*/
 
 h1{
+font-family:courier new, courier, monospace;
 font-weight:normal;
 line-height:17px;
-font-size:16px;
+font-size:18px;
 text-transform:uppercase;
 margin: 2px 0 20px 0;
-letter-spacing:0.04em;
+letter-spacing:1px;
 }
 
 #leftsidebar h2{
@@ -168,12 +169,15 @@ font-weight:normal;
 letter-spacing:auto;
 }
 
+#post.single h2, #post.page h2{
+margin:0 0 26px 0;
+}
+
 #post h2, #post h2 a{
 text-transform:uppercase;
 color:black;
-font-weight:normal;
-font-style:normal;
 padding:0;
+padding-top:1px; /*Specific to verdana 12px*/
 margin:0 0 7px 0;
 font-size:12px;
 }
@@ -183,7 +187,7 @@ color:black;
 text-decoration:none;
 }
 
-/* more HTML */
+/*......................... more HTML */
 
 a {
 color:black;
@@ -193,6 +197,13 @@ text-decoration: none;
 a:hover {
 color:blue;
 text-decoration: underline;
+}
+
+#post p{
+padding:0 0 12px 0;
+}
+#post p:last-child{
+padding:0 0 12px 0;
 }
 
 #post p a{
@@ -219,4 +230,56 @@ color:#fff;
 }
 
 
+/*  ...and Basic WordPress Blog Styles   */
 
+.alignleft,
+img.alignleft {
+display: inline;
+float: left;
+margin-right: 10px;
+}
+.alignright,
+img.alignright {
+display: inline;
+float: right;
+margin-left: 10px;
+}
+.aligncenter,
+img.aligncenter {
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.wp-caption {
+text-align: center;
+margin-bottom: 1.5em;
+}
+.wp-caption img {
+border: 0 none;
+margin: 0;
+padding: 0;
+}
+.wp-caption p.wp-caption-text {
+margin: 0;
+}
+.gallery dl {
+margin: 0;
+}
+.gallery-caption {
+margin:-10px 0 0 0;
+}
+blockquote.left {
+float: left;
+margin-left: 0;
+margin-right: 20px;
+text-align: right;
+width: 33%;
+}
+blockquote.right {
+float: right;
+margin-left: 20px;
+margin-right: 0;
+text-align: left;
+width: 33%;
+}
